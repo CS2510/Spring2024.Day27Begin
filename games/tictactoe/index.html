@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Simple Game</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canv">
+    </canvas>
+
+    <script type="module">
+        import "/engine/Engine.js"
+        import "./scenes/MainScene.js"
+        Engine.currentScene = new MainScene();
+
+        Engine.setup()
+    </script>
+</body>
+
+</html>

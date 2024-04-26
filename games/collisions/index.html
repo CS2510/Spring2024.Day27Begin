@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Collisions</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canv">
+    </canvas>
+
+    <script type="module">
+        import "/engine/Engine.js"
+        import "./scenes/MainScene.js"
+        import "./scenes/RectangleScene.js"
+        import "./scenes/Line2Circle2Scene.js"
+
+        // Engine.currentScene = new MainScene();
+        Engine.currentScene = new Line2Circle2Scene();
+
+        Engine.setup()
+    </script>
+</body>
+
+</html>
