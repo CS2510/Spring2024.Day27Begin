@@ -6,7 +6,7 @@ class LoopSliding extends Component {
     let tempX = Globals.lastX;
     let tempY = Globals.lastY;
 
-    const steps = 2;
+    const steps = 10;
     let subStep = 1 / steps;
     let deltaX = this.transform.x - tempX;
     let deltaY = this.transform.y - tempY;

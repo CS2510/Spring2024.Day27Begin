@@ -3,7 +3,7 @@ class KeyboardComponent extends Component {
     super();
   }
   update() {
-    let speed = 50
+    let speed = 100
     if (Input.keysDown.includes("ArrowLeft") || false)
       this.transform.x -= speed / Time.fps
     if (Input.keysDown.includes("ArrowRight") || false)
