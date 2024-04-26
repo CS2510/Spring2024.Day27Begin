@@ -3,14 +3,14 @@ class KeyboardComponent extends Component {
     super();
   }
   update() {
-    let speed = 1
-    if (Input.keysDown.includes("ArrowLeft"))
+    let speed = 50
+    if (Input.keysDown.includes("ArrowLeft") || false)
       this.transform.x -= speed / Time.fps
-    if (Input.keysDown.includes("ArrowRight") || true)
+    if (Input.keysDown.includes("ArrowRight") || false)
       this.transform.x += speed / Time.fps
-    if (Input.keysDown.includes("ArrowUp") || true)
+    if (Input.keysDown.includes("ArrowUp") || false)
       this.transform.y -= speed / Time.fps
-    if (Input.keysDown.includes("ArrowDown"))
+    if (Input.keysDown.includes("ArrowDown") || false)
       this.transform.y += speed / Time.fps
 
 

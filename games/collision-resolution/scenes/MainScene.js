@@ -84,19 +84,19 @@ class MainScene extends Scene {
 
 
 
-    //GameObject.instantiate(new WallGameObject(), margin, scale + margin, margin * 2, scale * 2 - margin * 2 + 10)
+    GameObject.instantiate(new WallGameObject(), margin, scale + margin, margin * 2, scale * 2 - margin * 2 + 10)
     GameObject.instantiate(new WallGameObject(), scale * 2 + margin, scale + margin, margin * 2, scale * 2 - margin * 2+2)
     GameObject.instantiate(new WallGameObject(), scale + margin, margin, scale * 2 - margin * 2+2, margin * 2)
-    //GameObject.instantiate(new WallGameObject(), scale + margin, scale * 2 + margin, scale * 2 - margin * 2 + 10, margin * 2)
+    GameObject.instantiate(new WallGameObject(), scale + margin, scale * 2 + margin, scale * 2 - margin * 2 + 10, margin * 2)
 
 
-    //GameObject.instantiate(new WallGameObject(), scale + margin, scale + margin, margin * 4, margin * 2)
-    //GameObject.instantiate(new WallGameObject(), scale + margin, scale + margin, margin * 2, margin * 4)
+    GameObject.instantiate(new WallGameObject(), scale + margin, scale + margin, margin * 4, margin * 2)
+    GameObject.instantiate(new WallGameObject(), scale + margin, scale + margin, margin * 2, margin * 4)
 
-    GameObject.instantiate(new PointGameObject(), 499, 105)
+    GameObject.instantiate(new PointGameObject(), 498, 495)
 
-    let s = 4;
-    Camera.main.transform.x = 400
+    let s = 1;
+    Camera.main.transform.x = 0
     Camera.main.transform.scaleX = s;
     Camera.main.transform.scaleY = s;
 
