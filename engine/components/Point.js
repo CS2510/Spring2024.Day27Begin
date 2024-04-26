@@ -6,8 +6,10 @@ class Point extends Component {
   draw(ctx) {
       ctx.beginPath();
       ctx.fillStyle = this.fill
-      ctx.arc(this.transform.x, this.transform.y, 10, 0, Math.PI * 2)
-      ctx.fill()
+      ctx.strokeStyle = this.fill
+      ctx.arc(this.transform.x, this.transform.y, 2, 0, Math.PI * 2)
+      //ctx.fill()
+      ctx.stroke()
   }
   asGeometry(){
     return new Vector2(this.transform.x, this.transform.y);

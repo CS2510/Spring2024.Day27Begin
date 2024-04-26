@@ -7,7 +7,7 @@ class CheckTransform2 extends Component {
     let tempY = Globals.lastY;
 
     const steps = 10;
-    let subStep = 1/steps;
+    let subStep = 1 / steps;
     let deltaX = this.transform.x - tempX;
     let deltaY = this.transform.y - tempY;
     let scaledDeltaX = subStep * deltaX;
@@ -21,7 +21,7 @@ class CheckTransform2 extends Component {
 
       let inCollision = false;
       for (let rectangle of rectangles) {
-        if (CollisionsGeometric.isVector2Rectangle2Collision(new Vector2(x,y), rectangle.getComponent("Rectangle").asGeometry()))
+        if (CollisionsGeometric.isVector2Rectangle2Collision(new Vector2(x, y), rectangle.getComponent("Rectangle").asGeometry()))
           inCollision = true;
       }
       if (inCollision) {
